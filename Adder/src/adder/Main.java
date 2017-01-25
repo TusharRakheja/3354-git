@@ -14,7 +14,7 @@ public class Main {
     private static int addArguments(String[] args) 
 		int sum = 0;
         for (String arg : args) {
-			sum += Integer.valueOf(arg)
+			sum += Integer.valueOf(arg);
 		}
 		return sum;
     }
