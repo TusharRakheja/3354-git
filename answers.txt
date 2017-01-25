@@ -1,0 +1,15 @@
+a. 7 commits
+
+b. The .gitignore file was added on Tuesday, Jan 24, at 22:28:11
+
+c. git log shows the commit history. git status shows which files have been created, modified, or deleted in the repository currently.
+
+d. Untracked files are files that git isn't tracking changes to. If any changes are saved to such a file, we won't be able to get the previous state of the file back. 
+
+   Unstaged files are files that 'are' being tracked. Git also knows what has changed in these files since the last commit. However, these files haven't been staged, or marked for committing yet, probably because more work is to be done on them.
+
+e. git checkout allows you to switch between branches, or even go back to a previous commit and build upon it. However, the current state of the repository is not affected, we can do `git checkout` again to go back to what were doing. 
+
+   git reset, however, actually modifies the repository to the state of a previous commit. Any uncommitted changes will be lost.
+
+f. git asks you to commit your changes first.  
