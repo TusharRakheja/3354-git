@@ -12,10 +12,13 @@ public class Main {
     }
 
     private static int addArguments(String[] args) {
-		int sum = 0;
+		int sumsub = 0;
         for (String arg : args) {
-			sum += Integer.valueOf(arg);
+			if (args[0].equals("-"))
+				sumsub -= ((arg.equals("-")) ? 0 : Integer.valueOf(arg));
+			else
+				sumsub += Integer.valueOf(arg);
 		}
-		return sum;
+		return sumsub;
     }
 }
